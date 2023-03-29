@@ -25,7 +25,10 @@ public class CalculadoraC {
 				max = arreglo[i];
 			suma += arreglo[i];
 		}
-		setDatos(min, max, (float)suma/tam);
+		
+		float prom = 0;
+		if (tam > 0) prom = ((float) suma / tam);
+		setDatos(min, max, prom);
 	}
 
 }
