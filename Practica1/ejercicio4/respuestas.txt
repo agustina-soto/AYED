@@ -1,0 +1,2 @@
+int es un tipo primitivo y por lo tanto inmutable, es por ello que al enviarlo como parametro no va a retornar un dato diferente con el que llego.
+Pasa lo mismo con Integer; es un dato wrapper (inmutable) por lo que no va a mostrar si hubo una modificacion durante el metodo.
