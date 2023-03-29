@@ -16,7 +16,8 @@ public class CalculadoraB {
 
 		datos.setMin(min);
 		datos.setMax(max);
-		datos.setPromedio((float) suma / tam);
+		if (tam > 0) datos.setPromedio((float) suma / tam);
+		else datos.setPromedio(0);
 
 	}
 }
