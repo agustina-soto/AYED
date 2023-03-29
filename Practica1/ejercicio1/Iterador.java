@@ -1,3 +1,5 @@
+package ejercicio1;
+
 public class Iterador {
 
 	public static void iterarFor(int a, int b) {
