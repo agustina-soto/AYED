@@ -6,7 +6,7 @@ import ejercicio3.Estudiante;
 public class TestListaEnlazadaGenerica {
 
 	public static void main(String[] args) {
-		ListaEnlazadaGenerica<Estudiante> lista = new ListaEnlazadaGenerica<>();
+		ListaEnlazadaGenerica<Estudiante> lista = new ListaEnlazadaGenerica<Estudiante>();
 		Estudiante est = new Estudiante();
 
 		est.setNombre("Juan");
