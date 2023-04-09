@@ -2,7 +2,6 @@ package ejercicio3;
 
 public class Profesor extends Persona {
 
-	private String email;
 	private String catedra;
 	private String facultad;
 
@@ -10,19 +9,15 @@ public class Profesor extends Persona {
 		
 	}
 
-	public Profesor(String nombre, String apellido, String email, String catedra, String facultad) {
-		super(nombre, apellido);
-		this.email = email;
+	public Profesor(String catedra, String facultad) {
 		this.catedra = catedra;
 		this.facultad = facultad;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
+	public Profesor(String nombre, String apellido, String email, String catedra, String facultad) {
+		super(nombre, apellido, email);
+		this.catedra = catedra;
+		this.facultad = facultad;
 	}
 
 	public String getCatedra() {
@@ -43,9 +38,7 @@ public class Profesor extends Persona {
 
 	// Retorna un String con los datos de los atributos
 	public String tusDatos() {
-			String infoPersonal = this.getNombre() + " - "
-								+ this.getApellido() + " - "
-								+ this.getEmail() + " - "
+			String infoPersonal = super.tusDatos() + " - "
 								+ this.getCatedra() + " - "
 								+ this.getFacultad();
 			return infoPersonal;
