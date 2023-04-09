@@ -39,8 +39,8 @@ public class Estudiante extends Persona {
 
 	// Retorna un String con los datos de los atributos
 	public String tusDatos() {
-		String infoPersonal = super.tusDatos() + " - "
-							+ this.getDireccion() + " - "
+		String infoPersonal = super.tusDatos() + " - DIRECCION: "
+							+ this.getDireccion() + " - COMISION: "
 							+ this.getComision();
 		return infoPersonal;
 	}
