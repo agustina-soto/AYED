@@ -16,7 +16,9 @@ public class Test {
 		estudiantes[e].setEmail("jansoto@gmail.com");
 		estudiantes[e].setDireccion("calle x entre w y z");
 		estudiantes[e].setComision(4);
-		
+
+		e++;
+
 		estudiantes[e] = new Estudiante();
 		estudiantes[e].setNombre("Gabi");
 		estudiantes[e].setApellido("Herrera");
