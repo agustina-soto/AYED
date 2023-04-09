@@ -1,38 +1,20 @@
 package ejercicio3;
 
-public class Estudiante {
+public class Estudiante extends Persona {
 
-	private String nombre;
-	private String apellido;
 	private int comision;
 	private String email;
 	private String direccion;
 
 	public Estudiante() {
+		
 	}
 
 	public Estudiante(String nombre, String apellido, int comision, String email, String direccion) {
-		this.nombre = nombre;
-		this.apellido = apellido;
+		super(nombre, apellido);
 		this.comision = comision;
 		this.email = email;
 		this.direccion = direccion;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public String getApellido() {
-		return apellido;
-	}
-
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
 	}
 
 	public int getComision() {
