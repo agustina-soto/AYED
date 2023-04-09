@@ -38,8 +38,8 @@ public class Profesor extends Persona {
 
 	// Retorna un String con los datos de los atributos
 	public String tusDatos() {
-			String infoPersonal = super.tusDatos() + " - "
-								+ this.getCatedra() + " - "
+			String infoPersonal = super.tusDatos() + " - CATEDRA: "
+								+ this.getCatedra() + " - FACULTAD: "
 								+ this.getFacultad();
 			return infoPersonal;
 		}
