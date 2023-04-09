@@ -40,7 +40,7 @@ public class Persona {
 	public String tusDatos() {
 		String infoPersonal = this.getNombre() + " - "
 							+ this.getApellido() + " - "
-							+ this.getEmail() + " - ";
+							+ this.getEmail();
 		return infoPersonal;
 	}
 }
