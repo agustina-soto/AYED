@@ -1,26 +1,19 @@
 package ejercicio1;
 
-public class Iterador {
+public class Main {
 
-	public static void iterarFor(int a, int b) {
-		for (int i = a; i <= b; i++) {
-			System.out.println(i);
-		}
-	}
-	
-	public static void iterarWhile(int a, int b) {
-		int i = a;
-		while (i <= b) {
-			System.out.println(i);
-			i++;
-		}
-	}
+	public static void main (String[] args) {
+		int num1 = 1;
+		int num2 = 5;
 
-	public static void iterarRecursivo(int a, int b) {
-		System.out.println(a);
-		if (b > a) {
-			iterarRecursivo(a+1, b);
-		}
-	}
+		System.out.println("Iterando con For");
+		Iterador.iterarFor(num1, num2);
 
+		System.out.println("Iterando con While");
+		Iterador.iterarWhile(num1, num2);
+
+		System.out.println("Iterando Recursivamente");
+		Iterador.iterarRecursivo(num1, num2);
+		
+	}
 }
