@@ -1,66 +1,71 @@
 package ejercicio3;
 
-public class Test {
+public class Estudiante {
 
-	public static void main(String[] args) {
-		Estudiante[] estudiantes = new Estudiante[2];
+	private String nombre;
+	private String apellido;
+	private int comision;
+	private String email;
+	private String direccion;
 
-		Profesor[] profesores = { new Profesor(), new Profesor(), new Profesor()};
+	public Estudiante() {
+	}
 
-		// CARGA DATOS EN EL ARREGLO DE ESTUDIANTES -------
+	public Estudiante(String nombre, String apellido, int comision, String email, String direccion) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.comision = comision;
+		this.email = email;
+		this.direccion = direccion;
+	}
 
-		int e = 0;
-		estudiantes[e] = new Estudiante();
-		estudiantes[e].setNombre("Juan");
-		estudiantes[e].setApellido("Soto");
-		estudiantes[e].setEmail("jansoto@gmail.com");
-		estudiantes[e].setDireccion("calle x entre w y z");
-		estudiantes[e].setComision(4);
+	public String getNombre() {
+		return nombre;
+	}
 
-		e++;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 
-		estudiantes[e] = new Estudiante();
-		estudiantes[e].setNombre("Gabi");
-		estudiantes[e].setApellido("Herrera");
-		estudiantes[e].setEmail("gabiherrera@gmail.com");
-		estudiantes[e].setDireccion("calle t entre f y p");
-		estudiantes[e].setComision(9);
+	public String getApellido() {
+		return apellido;
+	}
 
-		// CARGA DATOS EN EL ARREGLO DE PROFESORES -------
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
 
-		int p = 0;
-		profesores[p].setNombre("Leila");
-		profesores[p].setApellido("Schofi");
-		profesores[p].setEmail("leileschofi@gmail.com");
-		profesores[p].setCatedra("CADP");
-		profesores[p].setFacultad("UNLP");
+	public int getComision() {
+		return comision;
+	}
 
-		p++;
+	public void setComision(int comision) {
+		this.comision = comision;
+	}
 
-		profesores[p].setNombre("Fernando");
-		profesores[p].setApellido("Lis");
-		profesores[p].setEmail("fernandolis@gmail.com");
-		profesores[p].setCatedra("AYED");
-		profesores[p].setFacultad("UNLP");
+	public String getEmail() {
+		return email;
+	}
 
-		p++;
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-		profesores[p].setNombre("Maitena");
-		profesores[p].setApellido("Sechi");
-		profesores[p].setEmail("meitesechi@gmail.com");
-		profesores[p].setCatedra("ORG");
-		profesores[p].setFacultad("UNLP");
+	public String getDireccion() {
+		return direccion;
+	}
 
-		// IMPRIME LOS DATOS DE LOS ESTUDIANTES Y LOS PROFESORES
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
 
-		System.out.println("------- ESTUDIANTES --------");
-		for (Estudiante est : estudiantes) {
-			System.out.println(est.tusDatos());
-		}
-
-		System.out.println("\n------- PROFESORES --------");
-		for (Profesor prof : profesores) {
-			System.out.println(prof.tusDatos());
-		}
+	// Retorna un String con los datos de los atributos
+	public String tusDatos() {
+		String infoPersonal = this.getNombre() + " - "
+							+ this.getApellido() + " - "
+							+ this.getEmail() + " - "
+							+ this.getDireccion() + " - "
+							+ this.getComision();
+		return infoPersonal;
 	}
 }
