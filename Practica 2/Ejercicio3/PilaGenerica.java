@@ -16,6 +16,9 @@ public class PilaGenerica<T> {
 		datos.agregarInicio(elem); // Agrega al inicio porque por cómo se manejan las pilas por definicion (FILO)
 	}
 	
+	/*
+	 * CUANDO SE IMPLEMENTA ESTE METODO HAY QUE CONSULTAR SI LA PILA ESTA VACIA
+	 */
 	// Elimina y devuelve el elemento en el tope de la pila (tope de la pila = pos 1).
 	public T desapilar() {
 		T elem = datos.elemento(1); // La pila es FILO: el primero en desapilarse debe ser el que se encuentra en la pos 1
