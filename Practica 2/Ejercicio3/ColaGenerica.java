@@ -16,6 +16,10 @@ public class ColaGenerica<T> {
 		datos.agregarFinal(elem);
 	}
 
+
+	/*
+	 * CUANDO SE IMPLEMENTA ESTE METODO HAY QUE CONSULTAR SI LA COLA ESTA VACIA
+	 */
 	// Elimina y devuelve el primer elemento de la cola
 	public T desencolar() {
 		T elem = datos.elemento(1); // (1) porque siempre desencolo el primero (por definicion de la cola: FIFO)
