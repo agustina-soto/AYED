@@ -1,3 +1,11 @@
+/*
+
+	NO FUNCIONA BIEN, A VECES INGRESO UN STRING BALANCEADO Y ME INFORMA QUE NO LO ESTA :(
+
+*/
+
+
+
 package tp02.ejercicio4;
 
 import tp02.ejercicio3.PilaGenerica;
