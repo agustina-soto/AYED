@@ -3,9 +3,6 @@
 	NO FUNCIONA BIEN, A VECES INGRESO UN STRING BALANCEADO Y ME INFORMA QUE NO LO ESTA :(
 
 */
-
-
-
 package tp02.ejercicio4;
 
 import tp02.ejercicio3.PilaGenerica;
@@ -33,7 +30,7 @@ public class TestBalanceo {
 		
 		// Recorre el string caracter por caracter
 		for (char car : st.toCharArray()) { // Devuelve un Array de caracteres después de convertir st en una secuencia de caracteres
-			if(st.isEmpty()) continue; // Si el string esta vacio
+			if(st.isEmpty()) return true; // Si el string esta vacio
 
 			if (car == ' ') continue; // Si es un espacio
 
